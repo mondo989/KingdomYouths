@@ -28,7 +28,7 @@
 }
 body {
   padding-top: 80px;
-  color: #34495e;
+  color: #5c5c5c;
   background: #f5f5f5;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -41,6 +41,7 @@ h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: 26px;
 }
 a {
   color: #34495e;
@@ -96,122 +97,6 @@ body > section {
 .midnight-blue,
 .concrete,
 .asbestos {
-  color: #fff;
-}
-.turquoise h1,
-.green-sea h1,
-.sun-flower h1,
-.orange h1,
-.emerald h1,
-.nephrits h1,
-.carrot h1,
-.pumkin h1,
-.peter-river h1,
-.belize-hole h1,
-.alizarin h1,
-.pomegranate h1,
-.amethyst h1,
-.wisteria h1,
-.clouds .silver h1,
-.wet-asphalt h1,
-.midnight-blue h1,
-.concrete h1,
-.asbestos h1,
-.turquoise h2,
-.green-sea h2,
-.sun-flower h2,
-.orange h2,
-.emerald h2,
-.nephrits h2,
-.carrot h2,
-.pumkin h2,
-.peter-river h2,
-.belize-hole h2,
-.alizarin h2,
-.pomegranate h2,
-.amethyst h2,
-.wisteria h2,
-.clouds .silver h2,
-.wet-asphalt h2,
-.midnight-blue h2,
-.concrete h2,
-.asbestos h2,
-.turquoise h3,
-.green-sea h3,
-.sun-flower h3,
-.orange h3,
-.emerald h3,
-.nephrits h3,
-.carrot h3,
-.pumkin h3,
-.peter-river h3,
-.belize-hole h3,
-.alizarin h3,
-.pomegranate h3,
-.amethyst h3,
-.wisteria h3,
-.clouds .silver h3,
-.wet-asphalt h3,
-.midnight-blue h3,
-.concrete h3,
-.asbestos h3,
-.turquoise h4,
-.green-sea h4,
-.sun-flower h4,
-.orange h4,
-.emerald h4,
-.nephrits h4,
-.carrot h4,
-.pumkin h4,
-.peter-river h4,
-.belize-hole h4,
-.alizarin h4,
-.pomegranate h4,
-.amethyst h4,
-.wisteria h4,
-.clouds .silver h4,
-.wet-asphalt h4,
-.midnight-blue h4,
-.concrete h4,
-.asbestos h4,
-.turquoise h5,
-.green-sea h5,
-.sun-flower h5,
-.orange h5,
-.emerald h5,
-.nephrits h5,
-.carrot h5,
-.pumkin h5,
-.peter-river h5,
-.belize-hole h5,
-.alizarin h5,
-.pomegranate h5,
-.amethyst h5,
-.wisteria h5,
-.clouds .silver h5,
-.wet-asphalt h5,
-.midnight-blue h5,
-.concrete h5,
-.asbestos h5,
-.turquoise h6,
-.green-sea h6,
-.sun-flower h6,
-.orange h6,
-.emerald h6,
-.nephrits h6,
-.carrot h6,
-.pumkin h6,
-.peter-river h6,
-.belize-hole h6,
-.alizarin h6,
-.pomegranate h6,
-.amethyst h6,
-.wisteria h6,
-.clouds .silver h6,
-.wet-asphalt h6,
-.midnight-blue h6,
-.concrete h6,
-.asbestos h6 {
   color: #fff;
 }
 .turquoise small,
@@ -284,7 +169,7 @@ body > section {
   background-color: #bdc3c7;
 }
 .wet-asphalt {
-  background-color: #34495e;
+  background-color: #1E3C82;
 }
 .wet-asphalt a:not(.btn) {
   color: #bdc3c7;
@@ -328,20 +213,26 @@ body > section {
 #director_message {
   background: #1E3C82;
   min-height: 340px;
-  width: 790px;
+  width: 80%;
   margin: 0 auto;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
 }
 
 #director_message h2, p, span{
   color: white;
+
 }
 
 #location {
   background: white;
+
 }
 
 #location p {
-  color: black;
+  color: #5c5c5c;
   font-size: 17px;
 }
 
@@ -379,10 +270,23 @@ body > section {
 .width_80 {
   width: 80%;
 }
+.blue {
+  background: red;
+}
 
 .underline {
   font-style: oblique;
-  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.underline:hover {
+  background: transparent;
+  background: url("../images/site/maps.png");
+  -webkit-background-size: 100%;
+       -o-background-size: 100%;
+          background-size: 100%;
+  
 }
 
 .carousel-inner {
@@ -395,16 +299,36 @@ body > section {
   margin-top: 40px;
 }
 
-.programs:hover {
-  background: lightblue;
-  color: pink;
+.programs {
   -webkit-border-radius: 20px;
           border-radius: 20px;
+}
+.programs:hover {
+  border: 3px solid #f3f3f3;
+  background: #f3f3f3;
+  -webkit-transition: .41s;
+     -moz-transition: .41s;
+      -ms-transition: .41s;
+       -o-transition: .41s;
+          transition: .41s;
+}
+.fb_icon {
+  position: relative;
+  margin-top: -10px;
+  margin-right: 25px;
+}
+.fb_icon:hover {
+  background: red;
   -webkit-transition: 1s;
      -moz-transition: 1s;
       -ms-transition: 1s;
        -o-transition: 1s;
           transition: 1s;
+
+}
+
+.icon-angle-down {
+  margin-left: 2px;
 }
 
 .lt_gray {
@@ -418,6 +342,8 @@ body > section {
 .services {
   width: auto;
 margin: 0 auto;
+margin-top: 10px;
+border-radius: 8px;
 }
 
 img.services {
@@ -429,25 +355,39 @@ img.services {
   text-align: center;
   margin: 20px;
   font-weight: 800;
+  color: darkblue;
+}
+.media-heading:hover {
+ color: #34495E; 
+}
+
+.red {
+  height:200px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .email_link {
   color: #234b92;
   font-weight: bold;
+  margin: 0 20px;
+}
+.phone {
+  display: inline-block;
+  margin: 0 20px;
+  color: #8f98a1;
+  font-weight: bold;
 }
 
 .dr_chinwe {
-
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+  height: 220px;
+  width: 220px;
 }
 
 
 #top_content_header {
   height: 10px;
-  padding: 40px 0;
+  padding: 50px 0;
   background: #eaeaea;
   width: 80%;
   margin: 0 auto;
@@ -470,11 +410,21 @@ img.services {
 
 
 
+@media(max-width: 700px){ 
+  .carousel-inner {
+      width: 100%;
+  }
+  #director_message {
+    width: 100%;
+  }
+}
+
+
 
 @media(max-width: 968px){
   #top_content_header{
       opacity: 0;
-      margin-top: -80px;
+      margin-top: -103px;
     
     }
 }
@@ -490,25 +440,27 @@ img.services {
   position: relative;
 }
 #main-slider .carousel h2 {
-  font-size: 36px;
+  font-size: 26px;
 }
 #main-slider .carousel .btn {
-  border: 3px solid rgba(255, 255, 255, 0.5);
   color: #fff;
-  border-radius: 2px;
   margin-top: 15px;
   padding: 15px 30px;
   margin-left: 40px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
 }
 #main-slider .carousel .btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 #main-slider .carousel .boxed {
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px 15px;
+  background-color: rgba(0, 0, 0, 0.58);
   display: inline-block;
+  line-height: 50px;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
 }
 #main-slider .carousel .item {
   background-position: 50%;
@@ -593,6 +545,11 @@ img.services {
   -ms-animation: fadeInUp 300ms linear 1200ms both;
   animation: fadeInUp 300ms linear 1200ms both;
 }
+.media {
+  margin: 0 auto;
+  text-align: center;
+}
+
 #services .media:hover .icon-md {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -883,7 +840,7 @@ ul.tag-cloud li {
 }
 .navbar-inverse .navbar-brand {
   font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+  font-size: 27px;
   line-height: 50px;
   color: #fff;
 }
@@ -1130,6 +1087,7 @@ ul.rss li::before {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #bdc3c7;
+  background: #1E3C82;
 }
 #footer a {
   color: #bdc3c7;
