@@ -221,6 +221,10 @@ body > section {
           border-radius: 7px;
 }
 
+section#director_message {
+  height: auto;
+}
+
 #director_message h2, p, span{
   color: white;
 
@@ -300,13 +304,15 @@ body > section {
 }
 
 .programs {
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+    border: 1px solid white;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
        -webkit-transition: .41s;
      -moz-transition: .41s;
       -ms-transition: .41s;
        -o-transition: .41s;
           transition: .41s;
+
 }
 .programs:hover {
   border: 3px solid #f3f3f3;
@@ -385,7 +391,6 @@ img.services {
   width: 220px;
 }
 
-
 #top_content_header {
   height: 10px;
   padding: 50px 0;
@@ -409,6 +414,13 @@ img.services {
   margin-top: 22px;
 margin-right: 25px;
 }
+
+.bottom-nav {
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-right: 10px;
+}
+
 
 
 
@@ -436,10 +448,11 @@ margin-right: 25px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 #main-slider .carousel .boxed {
-  padding: 30px 15px;
+  padding: 30px 85px;
   background-color: rgba(0, 0, 0, 0.58);
   display: inline-block;
-  line-height: 50px;
+  line-height: 40px;
+
   -webkit-border-radius: 12px;
           border-radius: 12px;
 }
@@ -1220,9 +1233,18 @@ ul.faq li > div h3 {
   margin-right: 15px;
   }
 
-
 img.services {
   text-align: center;
+  }
+
+  .col-xs-12.programs {
+  margin: 0;
+  width: 100%;
+  }
+
+section#director_message {
+    height: 700px;
+    background: red;
   }
 }
 
@@ -1233,17 +1255,40 @@ img.services {
   }
   #director_message {
     width: 100%;
+    height: auto;
   }  
   
 .services {
-    max-width: 240px;
+   
     height: auto;
-    border-radius: 50%;
+    /* max-width: 240px;
+    border-radius: 50%;*/
+  }
+
+section#director_message {
+    height: auto;
+    background: pink;
   }
 
 }
 
-@media(max-width: 968px){
+
+@media(max-width: 992px){
+  .programs {
+    width: 50%; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    border: 1px solid #fff;
+  }
+
+  #director_message {
+    height: auto;
+  }
+}
+
+@media(max-width: 991px){
   #top_content_header{
       opacity: 0;
       margin-top: -103px;
@@ -1260,7 +1305,7 @@ img.services {
 }
 
 /*Max browser media queries*/
-@media(min-width: 968px){
+@media(min-width: 991px){
   #main-slider .prev {
   margin-left: 8%;
   }
@@ -1268,4 +1313,10 @@ img.services {
    #main-slider .next {
   right: 8%;
  }
+
+ .offered .col-md-4 {
+  width: 30%;
+  margin: 0 5px;
+  }
+
 }
