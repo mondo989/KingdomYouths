@@ -223,11 +223,15 @@ body > section {
 
 section#director_message {
   height: auto;
+  padding-top: 10px;
 }
 
 #director_message h2, p, span{
   color: white;
+}
 
+.director-font {
+  padding-right: 6px;
 }
 
 #location {
@@ -471,9 +475,6 @@ margin-right: 25px;
   width: 40%;
 text-align: center;
 }
-
-
-
 #main-slider h2 {
   color: white;
 }
@@ -497,7 +498,7 @@ text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
 }
 #main-slider .carousel .boxed {
-  padding: 30px 85px;
+  padding: 20px 65px;
   background-color: rgba(0, 0, 0, 0.58);
   display: inline-block;
   line-height: 40px;
@@ -556,7 +557,6 @@ text-align: center;
 }
 #main-slider .prev {
   left: 0;
-  z-index: -29999;
 }
 #main-slider .next {
   right: 0;
