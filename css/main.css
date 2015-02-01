@@ -355,6 +355,7 @@ section#director_message {
     -ms-transition: .41s;
     -o-transition: .41s;
     transition: .41s;
+    height: 520px;
 
 }
 
@@ -402,6 +403,10 @@ section#director_message {
 .maps {
   width: 100%;
 }
+.maps-img  {
+  width: 700px;
+  
+}
 
 .services {
   width: auto;
@@ -418,7 +423,7 @@ img.services {
 
 .media-heading {
   text-align: center;
-  margin: 20px;
+  margin: 10px 20px 0;
   font-weight: 400;
   color: darkblue;
 }
@@ -1124,7 +1129,7 @@ ul.tag-cloud li {
 
 .main_copy_color {
   color: #868f98;
-  padding: 50px;
+  padding: 15px 30px;
 }
 
 
