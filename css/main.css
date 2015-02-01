@@ -67,7 +67,7 @@ hr {
 }
 a:hover,
 a:focus {
-  color: #d9534f;
+  color: #fff;
   text-decoration: none;
   outline: none;
 }
@@ -223,7 +223,6 @@ body > section {
 
 section#director_message {
   height: auto;
-  padding-top: 10px;
 }
 
 #director_message h2, p, span{
@@ -293,11 +292,17 @@ section#director_message {
     border-color: #ffff;
 }
 
+.spacing {
+   background: red;
+   margin: 10px;
+}
+
 .service_times {
   color: black;
   line-height: 27px;
   margin-top: 30px;
   font-size: 17px;
+
 }
 /*
 .boxxed {
@@ -319,7 +324,6 @@ section#director_message {
 
 .underline:hover {
   background: transparent;
-  background: url("../images/site/maps.png");
   -webkit-background-size: 100%;
        -o-background-size: 100%;
           background-size: 100%;
@@ -329,6 +333,12 @@ section#director_message {
 .carousel-inner {
   width: 80%;
   margin: 0 auto;
+}
+
+.program-font {
+  color: black;
+  padding: 20px 70px;
+  line-height: 1.7;
 }
 
 .location_info {
@@ -484,8 +494,13 @@ margin-right: 25px;
   margin: 0 auto;
 }
 img.talent {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
+}
+
+h2.animation, p.animation {
+  padding: 0 60px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .blue {
@@ -1109,6 +1124,7 @@ ul.tag-cloud li {
 
 .main_copy_color {
   color: #868f98;
+  padding: 50px;
 }
 
 
@@ -1183,7 +1199,7 @@ ul.rss li::before {
   color: #bdc3c7;
 }
 #footer a:hover {
-  color: #d9534f;
+  color: #fff;
 }
 #footer ul {
   list-style: none;
@@ -1331,6 +1347,10 @@ img.services {
   width: 100%;
   }
 
+.program-font {
+  padding: 40px;
+}
+
 section#director_message {
     height: 700px;
   }
@@ -1409,7 +1429,7 @@ section#director_message {
   }
 
  .offered .col-md-4 {
-  width: 30%;
+  width: 32%;
   margin: 0 5px;
   }
 }
