@@ -57,6 +57,10 @@ hr {
 .btn {
   font-weight: 400;
 }
+
+.btn-md {
+  font-size: 20px;
+}
 .btn-transparent {
   border: 3px solid #fff;
   background: transparent;
@@ -219,14 +223,31 @@ body > section {
   border-bottom: 4px solid white;
   -webkit-border-radius: 7px;
           border-radius: 7px;
+  
+}
+
+#director_message h2 {
+  margin-bottom: 25px;
+  opacity: .8;
+  padding-top: 10px;
+}
+
+
+.red {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 section#director_message {
   height: auto;
+  padding-top: 20px;
 }
 
 #director_message h2, p, span{
   color: white;
+  margin-top: 0;
+  padding-right: 3px;
 }
 
 .director-font {
@@ -345,6 +366,9 @@ section#director_message {
   padding: 40px;
   margin-top: 40px;
 }
+/* This is where bug is in 
+.carousel.slide {
+}*/
 
 .programs {
     border: 1px solid white;
@@ -431,11 +455,6 @@ img.services {
  color: #34495E; 
 }
 
-.red {
-  height:200px;
-  text-align: center;
-  margin-top: 10px;
-}
 
 .email_link {
   color: #234b92;
@@ -450,8 +469,9 @@ img.services {
 }
 
 .dr_chinwe {
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
+  margin-top: 2px;
 }
 
 #top_content_header {
@@ -469,9 +489,13 @@ img.services {
 }
 
 p.animated-item-2 {
-
-  line-height: 1.7;
+  line-height: 1.9;
   font-size: 18px;
+  padding: 140px;
+}
+
+.text-center-2 {
+  width: 80%;
 }
 
 .bk_gray {
@@ -480,6 +504,7 @@ p.animated-item-2 {
 
 .black {
   color: white;
+  
 }
 
 
@@ -504,8 +529,7 @@ img.talent {
 }
 
 h2.animation, p.animation {
-  padding: 0 60px;
-  text-shadow: 1px 1px 1px black;
+  padding: 0 200px;
 }
 
 .blue {
@@ -520,17 +544,20 @@ h2.animation, p.animation {
   position: relative;
 }
 #main-slider .carousel h2 {
-  font-size: 24px;
-  line-height: 1.7
+  font-size: 30px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 1px black;
 }
 #main-slider .carousel .btn {
   color: #fff;
   margin-top: 15px;
-  padding: 15px 30px;
-  margin-left: 40px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  padding: 20px 65px;
+
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   border: 3px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0 .8);
 }
 #main-slider .carousel .btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -1132,7 +1159,9 @@ ul.tag-cloud li {
   padding: 15px 30px;
 }
 
-
+.carousel-indicators {
+  opacity: .5;
+}
 
 .row > div {
   margin-bottom: 10px;
@@ -1333,7 +1362,6 @@ ul.faq li > div h3 {
   margin-bottom: 150px;
 }
 
-
 @media(max-width: 400px) {
 .navbar-inverse .navbar-brand {
     font-size: 20px;
@@ -1341,6 +1369,14 @@ ul.faq li > div h3 {
 .navbar-toggle {
   margin-top: 23px;
   margin-right: 15px;
+  }
+
+  h2.animation, p.animation {
+  padding: 0 10px;
+}
+
+ .programs {
+    width: 80%; 
   }
 
 img.services {
@@ -1356,6 +1392,10 @@ img.services {
   padding: 40px;
 }
 
+div.programs {
+  width: 80%;
+}
+
 section#director_message {
     height: 700px;
   }
@@ -1366,6 +1406,11 @@ section#director_message {
   .carousel-inner {
       width: 100%;
   }
+
+  h2.animation, p.animation {
+  padding: 0;
+}
+
   #director_message {
     width: 100%;
     height: auto;
@@ -1386,6 +1431,8 @@ section#director_message {
 
 
 @media(max-width: 992px){
+ 
+
   .programs {
     width: 50%; 
     text-align: center;
@@ -1394,6 +1441,12 @@ section#director_message {
     margin-top: 40px;
     border: 1px solid #fff;
   }
+
+
+h2.animation, p.animation {
+  padding: 0 20px;
+}
+
 
   #director_message {
     height: auto;
@@ -1421,13 +1474,6 @@ section#director_message {
 /*Max browser media queries*/
 @media(min-width: 991px){
  
-  /*#main-slider .prev {
-  margin-left: 8%;
-  }
-   #main-slider .next {
-  right: 8%;
-  }*/
-
   #director_message {
     height: 340px;
     min-height: 340px;
@@ -1437,4 +1483,25 @@ section#director_message {
   width: 32%;
   margin: 0 5px;
   }
+}
+
+
+
+
+
+@media(max-width: 420px) {
+
+    .programs {
+      background: #FFF;
+    }
+
+  }
+
+
+
+@media only screen and (max-width : 600px) {
+  .programs {
+    width: 80%;
+  }
+
 }
