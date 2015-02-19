@@ -978,8 +978,8 @@ ul.tag-cloud li {
 }
 .navbar-inverse {
   border: none;
-  background: #1E3C82;
-  z-index: 900000000;
+  background: #05deec;
+
 }
 .navbar-inverse .navbar-brand {
   font-family: 'Open Sans', sans-serif;
