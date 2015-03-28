@@ -916,7 +916,6 @@ img.talent {
 }
 
 .center.centered {
-  background: rgba(0, 0, 0, .6);
   -webkit-border-radius: 12px;
           border-radius: 12px;
       padding: 20px 0;
